@@ -24,6 +24,12 @@
 						<td><input type="password" name="pwd" size="30"></td>
 					</tr>
 					<tr>
+						<td width="70" align="center"> 성별 </td>
+						<td> <input type="radio" name="gender" value="여자" checked> 여자
+						<input type="radio" name="gender" value="남자"> 남자 </td>
+						
+					</tr>
+					<tr>
 						<td colspan="2" align="center">
 						<input type="submit" value="회원가입"> 
 						<input type="reset" value="취소"></td>

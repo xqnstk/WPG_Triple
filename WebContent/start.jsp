@@ -6,17 +6,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
+<style>
+	body{
+		text-align:center;
+	}
+</style>
 <body>
 	start페이지다 !
 	
 	<form action="startProc.jsp" method="post">
-	<h2>성별</h2>
-		<input type="radio" name="gender" value="woman" checked> 여자 <br>
-  		<input type="radio" name="gender" value="man"> 남자 <br>
 	<h2>연령</h2>
-  		<input type="radio" name="age" value="10"> 청소년 <br>
-  		<input type="radio" name="age" value="20"> 어른 <br>
-  		<input type="radio" name="age" value="30"> 아저씨 <br>   
+  		<input type="radio" name="age" value="10"> 청소년 
+  		<input type="radio" name="age" value="20"> 성인 <br>
   	<h2>테마</h2>
   		<input type="radio" name="area" value="hotplace"> 핫플 <br>
   		<input type="radio" name="area" value="trip"> 여행 <br>   

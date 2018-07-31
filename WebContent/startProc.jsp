@@ -57,14 +57,12 @@ try {
     }
     
 
-
-    
 } catch (Exception e) {       
     out.println(e);
 }
 %>
-
-
+<input type="button" value="저장하기"> <br>
+<a href="myPage.jsp">마이페이지로</a>
 
 </body>
 </html>
