@@ -4,11 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="cs.css">
 <title>로그인 폼</title>
 </head>
 <body>
 	<center>
-		<form action="joinProc.jsp" method="post">
+		<form action="joinProc.jsp" method="post" id="loginform">
 			<table border=1>
 				<table border="1" cellpadding="3" cellspacing="0">
 					<tr>

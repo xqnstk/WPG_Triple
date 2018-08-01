@@ -4,35 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="cs.css">
 <title>Insert title here</title>
 </head>
-<style>
-form {
-	height: 700px;
-	width: 500px;
-	background-color: white;
-	margin-left: 1000px;
-	margin-top: 200px;
-	text-align: center;
-	border:10px solid black;
-}
-
-h1 {
-	font-size: 80px;
-}
-
-p {
-	font-size: 20px;
-}
-
-body {
-	background-image: url("image/back.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-</style>
 <body>
-	<form>
+	<form id="mainform">
 	<br><br>
 		<h1>Triple</h1>
 		<p>사용자 최적의 서울 여행지를 추천해드립니다.</p>

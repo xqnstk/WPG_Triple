@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="cs.css">
 <title>Insert title here</title>
 </head>
 <style>
@@ -14,7 +15,7 @@
 <body>
 	start페이지다 !
 	
-	<form action="startProc.jsp" method="post">
+	<form action="startProc.jsp" method="post" id="startform">
 	<h2>연령</h2>
   		<input type="radio" name="age" value="10"> 청소년 
   		<input type="radio" name="age" value="20"> 성인 <br>
@@ -24,10 +25,9 @@
   		<input type="radio" name="area" value="nature"> 자연 <br> 
   		<input type="radio" name="area" value="sinchon"> 맛집 <br>      
   	<h2>돈</h2>
-  		<input type="radio" name="fee" value="no"> 무자본 <br>
-  		<input type="radio" name="fee" value="small"> 만원 <br>
-  		<input type="radio" name="fee" value="normal"> 5만원 <br>   
-  		<input type="radio" name="fee" value="big"> 10만원 <br>   
+  		<input type="radio" name="fee" value="10000"> 만원 <br>
+  		<input type="radio" name="fee" value="50000"> 5만원 <br>   
+  		<input type="radio" name="fee" value="100000"> 10만원 <br>   
   	<h2>할 것</h2>
   		<input type="checkbox" name="todo" value="eat"> 먹기 <br>
   		<input type="checkbox" name="todo" value="see"> 보기 <br>
@@ -38,6 +38,9 @@
 		<input type="reset" value="취소">
   		
 	</form>
-	
+	<%
+	out.println(session.getAttribute("id")); 
+	out.println(session.getAttribute("pwd")); 
+	%>
 </body>
 </html>

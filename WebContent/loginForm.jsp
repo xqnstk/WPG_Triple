@@ -4,17 +4,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="cs.css">
 <title>로그인 폼</title>
 </head>
 <body>
 	<center>
-		<form action="loginProc.jsp" method="post">
+		<form action="loginProc.jsp" method="post" id="loginform">
 			<table border=1>
 				<table border="1" cellpadding="3" cellspacing="0">
-					<tr>
-						<td width="70" align="center">이름</td>
-						<td><input type="text" name="name" placeholder="이름 입력"></td>
-					</tr>
 					<tr>
 						<td width="70" align="center">아이디</td>
 						<td><input type="text" name="id" size="25" placeholder="아이디 입력"> </td>
