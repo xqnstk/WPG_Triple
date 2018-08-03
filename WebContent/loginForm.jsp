@@ -8,7 +8,16 @@
 <title>로그인 폼</title>
 </head>
 <body>
-<jsp:include  page="top.jsp" flush="false"></jsp:include>
+<%
+	String user_id = (String)session.getAttribute("id"); 
+	out.println(user_id); 
+	
+	if(("".equals(user_id))) { //회원만 메뉴바 보이게
+%>
+		<jsp:include  page="top.jsp" flush="false"></jsp:include>
+<%
+	} 
+%>
 	<center>
 		<form action="loginProc.jsp" method="post" class="loginform">
 			<table border=1>

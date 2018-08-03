@@ -22,11 +22,11 @@
 	
 	<table id="showtable">
 		<tr>
-			<td>핫플</td>
-			<td>자연</td>
+			<td><a href="hotplace.jsp">핫플</a></td>
+			<td><a href="nature.jsp">자연</a></td>
 		</tr>
 		<tr>
-			<td>한적</td>
+			<td><a href="trip.jsp">여행</a></td>
 			<td>맛집</td>
 		</tr>
 	</table>

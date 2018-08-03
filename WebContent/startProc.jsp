@@ -16,6 +16,8 @@ h4{color:white;}
 <jsp:include  page="top.jsp" flush="false"></jsp:include>
 <form id="mainform"> <br><br><br><br>
 <%
+	request.setCharacterEncoding("utf-8"); 
+
 	try {
 	Class.forName("com.mysql.jdbc.Driver");
 	String url = "jdbc:mysql://localhost:3306/travel";
@@ -25,12 +27,11 @@ h4{color:white;}
 
 	String sql;
     ResultSet rs, re;
-    String user_gender= request.getParameter("gender");
     String user_age= request.getParameter("age");
     String user_area= request.getParameter("area");
     String user_fee= request.getParameter("fee");
     String[] user_todo= request.getParameterValues("todo");
-    String[] result = new String[5];
+    String[] str = {"eat", "do", "see"};
     String place="", query="", resultDB="", j="";
     String id = (String)session.getAttribute("id");
     int sum=0, cnt=0;
@@ -44,7 +45,10 @@ h4{color:white;}
     } 
     	
     for(int i=1; i<=3; i++) {
+	%>
+	<h5>-----------<%=str[i-1]%>-----------</h5>
 	
+	<%
 	    sql = "SELECT active, script, money FROM "+place+" WHERE menu="+i+" and age="+user_age+" order by rand()"; //메뉴별로 1개씩 랜덤 출력
 	    stat.execute(sql);
 	    rs = stat.getResultSet();

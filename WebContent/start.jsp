@@ -20,16 +20,7 @@
   		<input type="radio" name="area" value="hotplace"> 핫플 <br>
   		<input type="radio" name="area" value="trip"> 여행 <br>   
   		<input type="radio" name="area" value="nature"> 자연 <br> 
-  		<input type="radio" name="area" value="sinchon"> 맛집 <br>      
-  	<h2>돈</h2>
-  		<input type="radio" name="fee" value="10000"> 만원 <br>
-  		<input type="radio" name="fee" value="50000"> 5만원 <br>   
-  		<input type="radio" name="fee" value="100000"> 10만원 <br>   
-  	<h2>할 것</h2>
-  		<input type="checkbox" name="todo" value="eat"> 먹기 <br>
-  		<input type="checkbox" name="todo" value="see"> 보기 <br>
-  		<input type="checkbox" name="todo" value="do"> 하기 <br>
-  		
+  		<input type="radio" name="area" value="sinchon"> 맛집 <br>       
   		
   		<input type="submit" value="결과 보기"> 
 		<input type="reset" value="취소">
