@@ -37,13 +37,11 @@ try {
         session.setAttribute("id", user_id); 
         session.setAttribute("pwd", user_pw);
         // 첫 페이지로 돌려보낸다
-        response.sendRedirect("start.jsp");    
+        response.sendRedirect("main.jsp");    
     } else {
         // DB에 내가적은 정보가 없다면 경고창을 띄워준다
         %> <script> alert("로그인 실패"); history.go(-1); </script> <%            
     }
-    
-    
 } catch (Exception e) {       
     out.println(e);
 }

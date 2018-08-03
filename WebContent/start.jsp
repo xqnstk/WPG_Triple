@@ -7,12 +7,9 @@
 <link rel="stylesheet" href="cs.css">
 <title>Insert title here</title>
 </head>
-<style>
-	body{
-		text-align:center;
-	}
-</style>
 <body>
+<jsp:include  page="top.jsp" flush="false"></jsp:include>
+
 	start페이지다 !
 	
 	<form action="startProc.jsp" method="post" id="startform">

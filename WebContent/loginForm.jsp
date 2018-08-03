@@ -8,8 +8,9 @@
 <title>로그인 폼</title>
 </head>
 <body>
+<jsp:include  page="top.jsp" flush="false"></jsp:include>
 	<center>
-		<form action="loginProc.jsp" method="post" id="loginform">
+		<form action="loginProc.jsp" method="post" class="loginform">
 			<table border=1>
 				<table border="1" cellpadding="3" cellspacing="0">
 					<tr>

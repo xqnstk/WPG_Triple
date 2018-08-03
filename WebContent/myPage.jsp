@@ -9,23 +9,52 @@
 <link rel="stylesheet" href="cs.css">
 <title>Insert title here</title>
 </head>
+<style>
+</style>
 <body>
-
+<jsp:include  page="top.jsp" flush="false"></jsp:include>
+<form class="loginform">
 <%
-try {
-	Class.forName("com.mysql.jdbc.Driver");
-	String url = "jdbc:mysql://localhost:3306/travel";
-	Connection con = DriverManager.getConnection(url, "admin", "1234");
-	Statement stat = con.createStatement();
-    
-   
-    
-} catch (Exception e) {       
-    out.println(e);
-}
-%>
+		request.setCharacterEncoding("utf-8"); 
+	
+		//POST로 Input.html로부터 입력받은 내용을 변수화
+		String user_id = (String)session.getAttribute("id"); 
+		String name = request.getParameter("name");
+		String pwd = request.getParameter("pwd");
+	    Boolean isLogin = false;
+	    String pt="";
+		String[] prt;
+		
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			String url = "jdbc:mysql://localhost:3306/travel";
+			Connection con = DriverManager.getConnection(url, "admin", "1234");
+			Statement stat = con.createStatement();
+			String sql;
+		    ResultSet rs;
 
-여기는 마이페이지이다. !!
+			String query = "SELECT result from member where id='" + user_id  + "'";
+			stat.execute(query);
+			rs = stat.getResultSet();
+			
+			if (rs.next()) {
+				pt = rs.getString(1);
+				prt = pt.split(",");
+				for(int i=0; i<prt.length; i++)
+					out.write(prt[i]+"<br>");
+			} else {
+		        %> <script> alert("로그인 후 이용해주세요."); history.go(-1); </script> <%            
+		    }
+			
+			stat.close();
+			rs.close();
+			con.close();
+			
+		} catch (Exception e) {
+			out.println(e);
+		}	
+	%>
 
+</form>
 </body>
 </html>

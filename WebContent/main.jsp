@@ -8,6 +8,14 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%
+	String user_id = (String)session.getAttribute("id"); 
+	if(!(user_id.equals(null))) { //회원만 메뉴바 보이게
+%>
+		<jsp:include  page="top.jsp" flush="false"></jsp:include>
+<%
+	} 
+%>
 	<form id="mainform">
 	<br><br>
 		<h1>Triple</h1>
