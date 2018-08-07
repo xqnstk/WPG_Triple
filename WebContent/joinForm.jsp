@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="cs.css">
-<title>로그인 폼</title>
+<title>회원가입 폼</title>
 </head>
 <body>
 <%
@@ -38,7 +38,6 @@
 						<td width="70" align="center"> 성별 </td>
 						<td> <input type="radio" name="gender" value="여자" checked> 여자
 						<input type="radio" name="gender" value="남자"> 남자 </td>
-						
 					</tr>
 					<tr>
 						<td colspan="2" align="center">

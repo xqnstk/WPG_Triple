@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>로그인</title>
 </head>
 <body>
 
@@ -39,7 +39,7 @@ try {
         session.setAttribute("id", user_id); 
         session.setAttribute("pwd", user_pw);
         // 첫 페이지로 돌려보낸다
-        response.sendRedirect("main.jsp");    
+        response.sendRedirect("index.jsp");    
     } else {
         // DB에 내가적은 정보가 없다면 경고창을 띄워준다
         %> <script> alert("로그인 실패"); history.go(-1); </script> <%            

@@ -20,7 +20,6 @@
 %>
 	<center>
 		<form action="loginProc.jsp" method="post" class="joinform">
-			<table border=1>
 				<table border="1" cellpadding="3" cellspacing="0">
 					<tr>
 						<td width="70" align="center">아이디</td>
@@ -34,8 +33,10 @@
 						<td colspan="2" align="center">
 						<input type="submit" value="로그인"> 
 						<input type="reset" value="취소"></td>
-					</tr>
+					</tr>					
 				</table>
+			<br><br>
+		비회원이십니까? <a href="joinForm.jsp">회원가입</a> <br> 
 		</form>
 	</center>
 </body>

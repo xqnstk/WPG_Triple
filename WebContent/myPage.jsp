@@ -7,18 +7,19 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="cs.css">
-<title>Insert title here</title>
+<title>마이페이지</title>
 </head>
 <style>
 </style>
 <body>
 	<jsp:include page="top.jsp" flush="false"></jsp:include>
-	<form class="mainform">
+	<form class="csform">
 		<%
 			String user_id = (String) session.getAttribute("id");
 			Boolean isLogin = false;
 			String pt = "";
 			String[] prt;
+			int cnt=0;
 
 			try {
 				Class.forName("com.mysql.jdbc.Driver");
@@ -31,12 +32,16 @@
 				String query = "SELECT result from member where id='" + user_id + "'";
 				stat.execute(query);
 				rs = stat.getResultSet();
-
+				cnt++;
+				
 				if (rs.next()) {
 					pt = rs.getString(1);
 					prt = pt.split(",");
-					for (int i = 0; i < prt.length; i++)
-						out.write(prt[i] + "<br>");
+					out.write("-----------------------------------------------------");
+					for (int i = 1; i < prt.length; i++) {
+						out.write(" "+prt[i] + "<br>");
+					}
+					out.write("-----------------------------------------------------");
 				} else {
 		%>
 		<script>

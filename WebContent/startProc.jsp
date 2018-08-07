@@ -7,14 +7,14 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="cs.css">
-<title>Insert title here</title>
+<title>여행지 추천받기</title>
 </head>
 <style>
 h4{color:white;}
 </style>
 <body>
 <jsp:include  page="top.jsp" flush="false"></jsp:include>
-<form id="csform"> <br><br><br><br>
+<form class="csform"> <br><br><br><br>
 <%
 	request.setCharacterEncoding("utf-8"); 
 

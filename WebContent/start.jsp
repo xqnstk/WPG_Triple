@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="cs.css">
-<title>Insert title here</title>
+<title>여행지 추천받기</title>
 </head>
 <body>
 <jsp:include  page="top.jsp" flush="false"></jsp:include>
@@ -21,7 +21,7 @@
   		<input type="radio" name="area" value="trip"> 여행 <br>   
   		<input type="radio" name="area" value="nature"> 자연 <br> 
   		<input type="radio" name="area" value="sinchon"> 맛집 <br>       
-  		
+  	<br><br><br><br>
   		<input type="submit" value="결과 보기"> 
 		<input type="reset" value="취소">
   		
