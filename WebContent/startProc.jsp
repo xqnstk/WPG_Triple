@@ -14,7 +14,7 @@ h4{color:white;}
 </style>
 <body>
 <jsp:include  page="top.jsp" flush="false"></jsp:include>
-<form id="mainform"> <br><br><br><br>
+<form id="csform"> <br><br><br><br>
 <%
 	request.setCharacterEncoding("utf-8"); 
 
@@ -46,7 +46,7 @@ h4{color:white;}
     	
     for(int i=1; i<=3; i++) {
 	%>
-	<h5>-----------<%=str[i-1]%>-----------</h5>
+	<h5>---------------------------------<%=str[i-1]%>---------------------------------</h5>
 	
 	<%
 	    sql = "SELECT active, script, money FROM "+place+" WHERE menu="+i+" and age="+user_age+" order by rand()"; //메뉴별로 1개씩 랜덤 출력
@@ -76,7 +76,7 @@ h4{color:white;}
 	query = "UPDATE member SET result='" + resultDB + "' where id='"+id+"'"; //resultDB문자열을 DB에 업데이트
 	stat.executeUpdate(query);
 
-    
+	out.println("--------------------------result-------------------------<br><br>");
 	out.println("지출 합계 : " + sum);
 	sum = 0;
 
@@ -85,7 +85,7 @@ h4{color:white;}
 	} catch (Exception e) {
 		out.println(e);
 	}
-%> <br>
+%> <br><br><br><br><br><br>
 <a href="myPage.jsp">마이페이지로</a>
 
 </form>

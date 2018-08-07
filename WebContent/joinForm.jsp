@@ -19,7 +19,7 @@
 	} 
 %>
 	<center>
-		<form action="joinProc.jsp" method="post" class="loginform">
+		<form action="joinProc.jsp" method="post" class="joinform">
 			<table border=1>
 				<table border="1" cellpadding="3" cellspacing="0">
 					<tr>

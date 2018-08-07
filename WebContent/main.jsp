@@ -18,7 +18,7 @@
 <%
 	} 
 %>
-	<form id="mainform">
+	<form class="csform">
 	<br><br>
 		<h1>Triple</h1>
 		<p>사용자 최적의 서울 여행지를 추천해드립니다.</p>

@@ -18,7 +18,7 @@
 <body>
 	<jsp:include page="top.jsp" flush="false"></jsp:include>
 <form class="resultform">
-<h2>홍대 </h2>
+<h2>한강 </h2>
 	<table>
 		<tr>
 			<td>번호</td>
@@ -38,7 +38,7 @@
 	Statement stat = con.createStatement();
 	Statement st = con.createStatement();
  	
-  	sql = "SELECT active, script, money FROM hongdae order by rand()"; //메뉴별로 1개씩 랜덤 출력
+  	sql = "SELECT active, script, money FROM hangang order by rand()"; //메뉴별로 1개씩 랜덤 출력
 	stat.execute(sql);
 	rs = stat.getResultSet();
 	  

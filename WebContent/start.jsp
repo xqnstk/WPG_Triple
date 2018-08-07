@@ -12,7 +12,7 @@
 
 	start페이지다 !
 	
-	<form action="startProc.jsp" method="post" id="startform">
+	<form action="startProc.jsp" method="post" class="csform">
 	<h2>연령</h2>
   		<input type="radio" name="age" value="10"> 청소년 
   		<input type="radio" name="age" value="20"> 성인 <br>

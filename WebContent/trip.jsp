@@ -8,17 +8,10 @@
 <link rel="stylesheet" href="cs.css">
 <title>Insert title here</title>
 </head>
-<style>
-#showtable {
-	width: 700px;
-	height: 700px;
-	background-color: white;
-}
-</style>
 <body>
 	<jsp:include page="top.jsp" flush="false"></jsp:include>
 <form class="resultform">
-<h2>홍대 </h2>
+<h2>이태원 </h2>
 	<table>
 		<tr>
 			<td>번호</td>
@@ -38,7 +31,7 @@
 	Statement stat = con.createStatement();
 	Statement st = con.createStatement();
  	
-  	sql = "SELECT active, script, money FROM hongdae order by rand()"; //메뉴별로 1개씩 랜덤 출력
+  	sql = "SELECT active, script, money FROM itaewon order by rand()"; //메뉴별로 1개씩 랜덤 출력
 	stat.execute(sql);
 	rs = stat.getResultSet();
 	  
@@ -58,6 +51,5 @@
 	<a href="main.jsp">메인으로</a>
 	<br><br><br>
 </form>
-
 </body>
 </html>

@@ -1,32 +1,31 @@
-#mainform {
+.csform {
 	height: 700px;
-	width: 500px;
+	width: 600px;
 	background-color: white;
-	margin-left: 1000px;
+	margin-left: 600px;
 	margin-top: 200px;
 	text-align: center;
 	border:10px solid black;
 }
 
-#startform {
-	height: 700px;
+.joinform {
+	height: 500px;
 	width: 500px;
 	background-color: white;
-	margin-left: 1000px;
 	margin-top: 200px;
 	text-align: center;
 	border:10px solid black;
 }
 
-.loginform {
-	height: 700px;
-	width: 500px;
+.resultform {
+	width: 1000px;
 	background-color: white;
-	margin-top: 200px;
+	margin-top: 100px;
+	margin-left: 600px;
 	text-align: center;
 	border:10px solid black;
-	
 }
+
 
 #tb1{
 	 border:0;

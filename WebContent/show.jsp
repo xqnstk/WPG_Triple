@@ -9,25 +9,32 @@
 </head>
 <style>
 #showtable{
-	width:700px;
-	height:700px;
-	background-color:white;
+	margin-left:200px;
+	margin-top:50px;
+	background-color:black;
 }
 
+
+#showtable img{
+	width:1500px;
+	height:300px;
+	opacity:0.7;
+}
+font{
+	size:16;
+}
 </style>
 <body>
 <jsp:include  page="top.jsp" flush="false"></jsp:include>
-
-	show페이지다 !
-	
 	<table id="showtable">
 		<tr>
-			<td><a href="hotplace.jsp">핫플</a></td>
-			<td><a href="nature.jsp">자연</a></td>
+			<td><a href="hotplace.jsp"><img src="image/hotple.PNG"></a></td>
 		</tr>
 		<tr>
-			<td><a href="trip.jsp">여행</a></td>
-			<td>맛집</td>
+			<td><a href="nature.jsp"><img src="image/hang.PNG"></a></td>
+		</tr>
+		<tr>
+			<td><a href="trip.jsp"><img src="image/won.PNG"></a></td>
 		</tr>
 	</table>
 	
